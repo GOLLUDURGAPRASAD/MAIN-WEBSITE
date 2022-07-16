@@ -1,0 +1,247 @@
+body{
+    background: linear-gradient(to right,#FF00FF, #00FFFF,deeppink,yellow); 
+}
+#name{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    visibility: hidden;
+}
+#image{
+    border: 2px skyblue;
+    border-radius:50%;
+}
+h2{
+    position:absolute;
+    top: 0px;
+    left: 250px;
+    font-size:30px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2::first-letter{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*h2::after{
+    content: url(love2.png);
+}*/
+.div1{
+    border-bottom: 7px solid black;
+    width: 40px;
+    margin-bottom: 5px;
+}
+.div2{
+    border-bottom: 7px solid whitesmoke;
+    width: 40px;
+    margin-bottom: 5px;
+}
+.div3{
+    border-bottom: 7px solid black;
+    width: 40px;
+}
+.main-div{
+    position: absolute;
+    top: 50px;
+    right:20px;
+    cursor: pointer;
+}
+#footer-sec{
+    background-color: lightseagreen;
+    color: black;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width:100%;
+     border-top: 5px solid pink;
+}
+@keyframes Name{
+    0%{
+        background-color: whitesmoke;
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: scale(1,1);
+    }
+}
+#counter{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+.menu-bar{
+    background-color: deeppink;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.menu-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+.menu-bar ul li{
+    padding: 10px 100px ;
+    position: relative;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.menu-bar ul li:hover{
+    background-color: orange;
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 5px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 50px;
+    padding: 10px;
+    color: #FF0000;
+}
+.sub-menu1{
+    display: none;
+}
+ .sub-menu ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 180px;
+    background-color: blueviolet;
+}
+.verticalNav{
+    background-color:sandybrown;
+    width: 200px;
+    float: right;
+    position: absolute;
+    top: 90px;
+    right:5px;
+    padding-left: 40px;
+    display: none;
+}
+.verticalNav ul li{
+    list-style-type: none;
+    margin-bottom: 30px;
+
+}
+.verticalNav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline;
+}
+.Vsub-menu{
+    display: none;
+}
+.verticalNav ul li:hover .Vsub-menu{
+    position: absolute;
+    top: 110px;
+    right:160px;
+    width: 90px;
+    background-color: skyblue;
+    display: block;
+}
+.Vsub-menu1{
+    display: none;
+}
+.Vsub-menu ul li:hover .Vsub-menu1{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    background-color: blueviolet;
+    display: block;
+    margin-bottom: 2px;
+}
+.left{
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}
+.right{
+    position: absolute;
+    top: 350px;
+    right: 320px;
+}
+.leftdiv{
+    width: 300px;
+    background-color:white;
+    float: left;
+    height: 75%;
+    overflow: scroll;
+}
+.middiv{
+    width: 720px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.rightdiv{
+    width: 280px;
+    background-color:gray;
+    float:right;
+    height:75%
+}
+.rightdiv p{
+    color:black;
+}
+b{
+    font-family:archivo black;
+    font-size: 25px;
+    padding-left: 60px;
+    padding-top: 40px;
+    
+}
+.lefdiv1{
+    font-family: archivo black;
+    color: black;
+    font-size: 18px;
+    background-color: deepskyblue;
+    width: 293px;
+    position: fixed;
+    border: 3px solid white;
+}
+.lefdiv1 p{
+    padding-left: 50px;
+}
+#myInput{
+    border: 3px solid gray;
+    width: 292px;
+    border-radius: 2%;
+}
+.ids{
+    margin-top: 90px;
+
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding-left:  70px;
+    margin: 5;
+    float: left;
+    font-size: 28px;
+  }
+  #Hnav{
+    margin-left: 0px;
+
+  }
+  #Hnav ul{
+    margin-left: 0px;
+  }

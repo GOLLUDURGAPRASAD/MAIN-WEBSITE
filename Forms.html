@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title>Reg Form</title>
+        <style type="text/css">
+            body{
+                font-family: ARIAL;
+                background: linear-gradient(#FF00FF, #00FFFF);
+            }
+            .div1{
+                margin-top: 0px;
+                width:49%;
+                background: linear-gradient(to right,#FFFF00,#800080);
+            }
+            h1{
+               color:darkorange;
+               font-family:sans-serif;
+               font-size: 30px;
+               text-shadow:15px 5px 5px black;
+            }
+            .subdiv{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color:skyblue;
+                height:10%;
+            }
+            .tab{
+                padding: 15px;
+            }
+            .tab tr td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <div class="div1"> 
+        <div class="subdiv">
+        <h1>REGISTRATION FORM</h1></div>
+        <form action="a.php" method="post" onsubmit="return myform()">
+            <table class="tab">
+                <tr><td><b>FIRST NAME  :</td><td><input type="text" id="fn" onkeyup="fullname"></td><td><label id="fl"></label></td></tr>
+                <tr><td><b>MIDDLE NAME :</td><td><input type="text" id="mn" onkeyup="fullname"></td><td><label id="ml"></label></td></tr>
+                <tr><td><b>LAST NAME   :</td><td><input type="text" id="ln"></td><td><label id="ll"></label></td></tr>
+                <tr><td><b>FULL NAME   :</td><td><input type="text" id="fullab" onmouseover="fullname()"></td></tr>
+                <tr><td><b>ENTER PASSWORD :</td><td><input type="password" id="pas"><input type="image" src="eye.png"></td><td><label id="psl"></label></td></tr>
+                <tr><td><b>MOBILE NUMBER :</td><td><input type="number" id="mob"></td><td><label id="ml"></label></td></tr>
+                <tr><td><b>HOBBIES :</td><td><input type="checkbox" id="c1"><label>Reading Books</label><input type="checkbox" id="c2"><label>Watching Movies</label><input type="checkbox" id="c3"><label>Playing Cricket</label><input type="checkbox" id="c4"><label> Writing Notes</label></td><td><label id="chek"></label></td></tr>
+                <tr><td><b>UPLOAD PROFILE PHOTO :</td><td><input type="file" accept="image/*" id="photo"></td></tr>
+                <tr><td><b>ENTER MAIL :</td><td><input type="email" id="Gmail" placeholder="example@gmail.com"></td></tr>
+                <tr><td><b>DATE OF BIRTH :</td><td><input type="date" id="dob"></td></tr>
+                <tr><td></td><td><input type="submit" value="Submit" style="background-color: deepskyblue; cursor: pointer;"><input type="reset" value="Reset" id="res" style="margin-left:25px; background-color: darkorange; cursor: pointer;"></td></tr>
+            </table>
+        </form>
+        </div>
+        </center>
+        <script src="forms.js"></script>
+    </body>
+</html>
